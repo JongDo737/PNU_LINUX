@@ -3,15 +3,15 @@
 #include <time.h>
  
 void selection_sort(int arr[], int n) {
-    int i, j, min_idx;
-    // 가장 작은 수  찾기, 맨뒤와 보내기
+    int i, j, max_idx;
+    // 가장 큰 수  찾기, 맨뒤와 보내기
     for(i=0;i< n-1; i++) {
-        min_idx = -1;
+        max_idx = -1;
         int temp_idx = 0;
         int temp_num = 0;
         for(j =0; j<n-i; j++) {
-            if(arr[j] > min_idx) {       // 작은수 찾기
-                min_idx = arr[j];
+            if(arr[j] > max_idx) {       // 큰 수 찾기
+                max_idx = arr[j];
                 temp_idx = j;
 
             }
